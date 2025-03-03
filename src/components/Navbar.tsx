@@ -27,7 +27,7 @@ const Navbar = ({ user, onLogin, onLogout }: NavbarProps) => {
           to="/" 
           className="text-xl font-semibold tracking-tight flex items-center"
         >
-          give<span className="text-primary font-bold">me</span>what
+          Give<span className="text-primary font-bold uppercase text-amber-500">me</span>whaT
         </Link>
 
         {/* Desktop Navigation */}
