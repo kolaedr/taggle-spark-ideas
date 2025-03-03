@@ -1,0 +1,67 @@
+{
+  "common": {
+    "home": "Home",
+    "about": "About",
+    "saved": "Saved Ideas",
+    "profile": "Profile",
+    "login": "Sign In",
+    "logout": "Logout",
+    "email": "Email",
+    "language": "Language",
+    "preferences": "Preferences",
+    "preferredLanguage": "Preferred Language",
+    "selectLanguage": "Select language",
+    "appName": "GiveMeWhat",
+    "allRightsReserved": "All rights reserved"
+  },
+  "home": {
+    "title": "What will you create today?",
+    "subtitle": "Select a tag below and let AI generate creative ideas for you. Click on different tags to explore endless possibilities.",
+    "selectTag": "Select a tag to get started",
+    "clickTagDescription": "Click on any tag above to generate a creative idea",
+    "yourIdea": "Your {{tag}} Idea",
+    "refresh": "Refresh",
+    "refreshDescription": "Click refresh for a new idea or try another tag"
+  },
+  "profile": {
+    "title": "Profile",
+    "accountInfo": "Account Information"
+  },
+  "auth": {
+    "welcomeBack": "Welcome back!",
+    "createAccount": "Create an account",
+    "loginDescription": "Enter your credentials to access your account",
+    "signupDescription": "Fill in the details below to create your account",
+    "forgotPassword": "Forgot password?",
+    "processing": "Processing...",
+    "passwordRequirements": "Password must be at least 8 characters long"
+  },
+  "ideas": {
+    "savedToFavorites": "Idea saved to favorites",
+    "removedFromFavorites": "Idea removed from favorites",
+    "findInSaved": "You can find this in your saved ideas",
+    "removedFromCollection": "The idea has been removed from your collection",
+    "shareTitle": "Check out this idea from GiveMeWhat",
+    "copiedToClipboard": "Copied to clipboard",
+    "clipboardDescription": "The idea has been copied to your clipboard",
+    "share": "Share",
+    "saveToFavorites": "Save to favorites",
+    "removeFromFavorites": "Remove from favorites"
+  },
+  "tags": {
+    "joke": "Joke",
+    "recipe": "Recipe",
+    "startup": "Startup",
+    "story": "Story",
+    "poem": "Poem",
+    "art": "Art",
+    "app": "App",
+    "game": "Game",
+    "movie": "Movie",
+    "book": "Book",
+    "song": "Song",
+    "exercise": "Exercise",
+    "news": "News",
+    "idea": "Idea"
+  }
+}

@@ -1,12 +1,11 @@
-
 import { serve } from "https://deno.land/std@0.168.0/http/server.ts";
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
 import { corsHeaders } from "../_shared/cors.ts";
 
 const openaiApiKey = Deno.env.get("OPENAI_API_KEY") || "";
 
-async function generateIdeaWithOpenAI(tag: string) {
-  const prompt = `Generate a creative and original ${tag} idea. Be specific, engaging, and concise (50-100 words).`;
+async function generateIdeaWithOpenAI(tag: string, language: string = 'en') {
+  const prompt = `Generate a creative and original ${tag} idea. Be specific, engaging, and concise (50-100 words). Generate the response in ${language} language.`;
   
   const response = await fetch("https://api.openai.com/v1/chat/completions", {
     method: "POST",
@@ -19,7 +18,7 @@ async function generateIdeaWithOpenAI(tag: string) {
       messages: [
         {
           role: "system",
-          content: "You are a creative assistant that generates original ideas."
+          content: "You are a creative assistant that generates original ideas. Always respond in the specified language."
         },
         {
           role: "user",
@@ -47,8 +46,8 @@ serve(async (req) => {
   }
 
   try {
-    // Get the request body and extract the tag
-    const { tag } = await req.json();
+    // Get the request body and extract the tag and language
+    const { tag, language } = await req.json();
     
     if (!tag) {
       return new Response(
@@ -57,8 +56,8 @@ serve(async (req) => {
       );
     }
 
-    // Call OpenAI to generate the idea
-    const content = await generateIdeaWithOpenAI(tag);
+    // Call OpenAI to generate the idea with the specified language
+    const content = await generateIdeaWithOpenAI(tag, language);
     
     // Return the generated idea
     return new Response(

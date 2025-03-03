@@ -1,0 +1,67 @@
+{
+  "common": {
+    "home": "Accueil",
+    "about": "À propos",
+    "saved": "Idées sauvegardées",
+    "profile": "Profil",
+    "login": "Se connecter",
+    "logout": "Se déconnecter",
+    "email": "Email",
+    "language": "Langue",
+    "preferences": "Préférences",
+    "preferredLanguage": "Langue préférée",
+    "selectLanguage": "Sélectionner la langue",
+    "appName": "GiveMeWhat",
+    "allRightsReserved": "Tous droits réservés"
+  },
+  "home": {
+    "title": "Que vais-tu créer aujourd'hui ?",
+    "subtitle": "Sélectionne une étiquette et laisse l'IA générer des idées créatives pour toi. Clique sur différentes étiquettes pour explorer des possibilités infinies.",
+    "selectTag": "Sélectionne une étiquette pour commencer",
+    "clickTagDescription": "Clique sur n'importe quelle étiquette pour générer une idée créative",
+    "yourIdea": "Ton idée de {{tag}}",
+    "refresh": "Actualiser",
+    "refreshDescription": "Clique sur actualiser pour une nouvelle idée ou essaie une autre étiquette"
+  },
+  "profile": {
+    "title": "Profil",
+    "accountInfo": "Informations du compte"
+  },
+  "auth": {
+    "welcomeBack": "Bon retour !",
+    "createAccount": "Créer un compte",
+    "loginDescription": "Entre tes identifiants pour accéder à ton compte",
+    "signupDescription": "Remplis les détails ci-dessous pour créer ton compte",
+    "forgotPassword": "Mot de passe oublié ?",
+    "processing": "Traitement en cours...",
+    "passwordRequirements": "Le mot de passe doit contenir au moins 8 caractères"
+  },
+  "ideas": {
+    "savedToFavorites": "Idée sauvegardée dans les favoris",
+    "removedFromFavorites": "Idée retirée des favoris",
+    "findInSaved": "Tu peux trouver cela dans tes idées sauvegardées",
+    "removedFromCollection": "L'idée a été retirée de ta collection",
+    "shareTitle": "Regarde cette idée de GiveMeWhat",
+    "copiedToClipboard": "Copié dans le presse-papiers",
+    "clipboardDescription": "L'idée a été copiée dans ton presse-papiers",
+    "share": "Partager",
+    "saveToFavorites": "Sauvegarder dans les favoris",
+    "removeFromFavorites": "Retirer des favoris"
+  },
+  "tags": {
+    "joke": "Blague",
+    "recipe": "Recette",
+    "startup": "Startup",
+    "story": "Histoire",
+    "poem": "Poème",
+    "art": "Art",
+    "app": "Application",
+    "game": "Jeu",
+    "movie": "Film",
+    "book": "Livre",
+    "song": "Chanson",
+    "exercise": "Exercice",
+    "news": "Actualités",
+    "idea": "Idée"
+  }
+}

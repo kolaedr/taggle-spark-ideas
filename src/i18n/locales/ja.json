@@ -1,0 +1,67 @@
+{
+  "common": {
+    "home": "ホーム",
+    "about": "概要",
+    "saved": "保存したアイデア",
+    "profile": "プロフィール",
+    "login": "ログイン",
+    "logout": "ログアウト",
+    "email": "メール",
+    "language": "言語",
+    "preferences": "設定",
+    "preferredLanguage": "優先言語",
+    "selectLanguage": "言語を選択",
+    "appName": "GiveMeWhat",
+    "allRightsReserved": "全著作権所有"
+  },
+  "home": {
+    "title": "今日は何を作りますか？",
+    "subtitle": "タグを選択して、AIがクリエイティブなアイデアを生成します。異なるタグをクリックして、無限の可能性を探索しましょう。",
+    "selectTag": "タグを選択して開始",
+    "clickTagDescription": "タグをクリックしてクリエイティブなアイデアを生成",
+    "yourIdea": "あなたの{{tag}}アイデア",
+    "refresh": "更新",
+    "refreshDescription": "更新をクリックして新しいアイデアを取得するか、別のタグを試してください"
+  },
+  "profile": {
+    "title": "プロフィール",
+    "accountInfo": "アカウント情報"
+  },
+  "auth": {
+    "welcomeBack": "おかえりなさい！",
+    "createAccount": "アカウントを作成",
+    "loginDescription": "アカウントにアクセスするには認証情報を入力してください",
+    "signupDescription": "アカウントを作成するには以下の詳細を入力してください",
+    "forgotPassword": "パスワードをお忘れですか？",
+    "processing": "処理中...",
+    "passwordRequirements": "パスワードは8文字以上である必要があります"
+  },
+  "ideas": {
+    "savedToFavorites": "お気に入りに保存しました",
+    "removedFromFavorites": "お気に入りから削除しました",
+    "findInSaved": "保存したアイデアで見つけることができます",
+    "removedFromCollection": "コレクションから削除されました",
+    "shareTitle": "GiveMeWhatのこのアイデアをチェックしてください",
+    "copiedToClipboard": "クリップボードにコピーしました",
+    "clipboardDescription": "アイデアがクリップボードにコピーされました",
+    "share": "共有",
+    "saveToFavorites": "お気に入りに保存",
+    "removeFromFavorites": "お気に入りから削除"
+  },
+  "tags": {
+    "joke": "ジョーク",
+    "recipe": "レシピ",
+    "startup": "スタートアップ",
+    "story": "ストーリー",
+    "poem": "詩",
+    "art": "アート",
+    "app": "アプリ",
+    "game": "ゲーム",
+    "movie": "映画",
+    "book": "本",
+    "song": "歌",
+    "exercise": "エクササイズ",
+    "news": "ニュース",
+    "idea": "アイデア"
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "common": {
+    "home": "Início",
+    "about": "Sobre",
+    "saved": "Ideias salvas",
+    "profile": "Perfil",
+    "login": "Entrar",
+    "logout": "Sair",
+    "email": "Email",
+    "language": "Idioma",
+    "preferences": "Preferências",
+    "preferredLanguage": "Idioma preferido",
+    "selectLanguage": "Selecionar idioma",
+    "appName": "GiveMeWhat",
+    "allRightsReserved": "Todos os direitos reservados"
+  },
+  "home": {
+    "title": "O que você vai criar hoje?",
+    "subtitle": "Selecione uma tag e deixe a IA gerar ideias criativas para você. Clique em diferentes tags para explorar infinitas possibilidades.",
+    "selectTag": "Selecione uma tag para começar",
+    "clickTagDescription": "Clique em qualquer tag para gerar uma ideia criativa",
+    "yourIdea": "Sua ideia de {{tag}}",
+    "refresh": "Atualizar",
+    "refreshDescription": "Clique em atualizar para uma nova ideia ou tente outra tag"
+  },
+  "profile": {
+    "title": "Perfil",
+    "accountInfo": "Informações da conta"
+  },
+  "auth": {
+    "welcomeBack": "Bem-vindo de volta!",
+    "createAccount": "Criar uma conta",
+    "loginDescription": "Digite suas credenciais para acessar sua conta",
+    "signupDescription": "Preencha os detalhes abaixo para criar sua conta",
+    "forgotPassword": "Esqueceu a senha?",
+    "processing": "Processando...",
+    "passwordRequirements": "A senha deve ter pelo menos 8 caracteres"
+  },
+  "ideas": {
+    "savedToFavorites": "Ideia salva nos favoritos",
+    "removedFromFavorites": "Ideia removida dos favoritos",
+    "findInSaved": "Você pode encontrar isso nas suas ideias salvas",
+    "removedFromCollection": "A ideia foi removida da sua coleção",
+    "shareTitle": "Confira esta ideia do GiveMeWhat",
+    "copiedToClipboard": "Copiado para a área de transferência",
+    "clipboardDescription": "A ideia foi copiada para sua área de transferência",
+    "share": "Compartilhar",
+    "saveToFavorites": "Salvar nos favoritos",
+    "removeFromFavorites": "Remover dos favoritos"
+  },
+  "tags": {
+    "joke": "Piada",
+    "recipe": "Receita",
+    "startup": "Startup",
+    "story": "História",
+    "poem": "Poema",
+    "art": "Arte",
+    "app": "Aplicativo",
+    "game": "Jogo",
+    "movie": "Filme",
+    "book": "Livro",
+    "song": "Música",
+    "exercise": "Exercício",
+    "news": "Notícias",
+    "idea": "Ideia"
+  }
+}

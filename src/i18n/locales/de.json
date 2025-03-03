@@ -1,0 +1,67 @@
+{
+  "common": {
+    "home": "Startseite",
+    "about": "Über uns",
+    "saved": "Gespeicherte Ideen",
+    "profile": "Profil",
+    "login": "Anmelden",
+    "logout": "Abmelden",
+    "email": "E-Mail",
+    "language": "Sprache",
+    "preferences": "Einstellungen",
+    "preferredLanguage": "Bevorzugte Sprache",
+    "selectLanguage": "Sprache auswählen",
+    "appName": "GiveMeWhat",
+    "allRightsReserved": "Alle Rechte vorbehalten"
+  },
+  "home": {
+    "title": "Was möchtest du heute erschaffen?",
+    "subtitle": "Wähle ein Schlagwort und lass KI kreative Ideen für dich generieren. Klicke auf verschiedene Schlagworte, um endlose Möglichkeiten zu erkunden.",
+    "selectTag": "Wähle ein Schlagwort zum Starten",
+    "clickTagDescription": "Klicke auf ein Schlagwort, um eine kreative Idee zu generieren",
+    "yourIdea": "Deine {{tag}}-Idee",
+    "refresh": "Aktualisieren",
+    "refreshDescription": "Klicke auf Aktualisieren für eine neue Idee oder versuche ein anderes Schlagwort"
+  },
+  "profile": {
+    "title": "Profil",
+    "accountInfo": "Kontoinformationen"
+  },
+  "auth": {
+    "welcomeBack": "Willkommen zurück!",
+    "createAccount": "Konto erstellen",
+    "loginDescription": "Gib deine Anmeldedaten ein, um auf dein Konto zuzugreifen",
+    "signupDescription": "Fülle die Details unten aus, um dein Konto zu erstellen",
+    "forgotPassword": "Passwort vergessen?",
+    "processing": "Verarbeitung...",
+    "passwordRequirements": "Das Passwort muss mindestens 8 Zeichen lang sein"
+  },
+  "ideas": {
+    "savedToFavorites": "Idee in Favoriten gespeichert",
+    "removedFromFavorites": "Idee aus Favoriten entfernt",
+    "findInSaved": "Du findest dies in deinen gespeicherten Ideen",
+    "removedFromCollection": "Die Idee wurde aus deiner Sammlung entfernt",
+    "shareTitle": "Schau dir diese Idee von GiveMeWhat an",
+    "copiedToClipboard": "In Zwischenablage kopiert",
+    "clipboardDescription": "Die Idee wurde in deine Zwischenablage kopiert",
+    "share": "Teilen",
+    "saveToFavorites": "In Favoriten speichern",
+    "removeFromFavorites": "Aus Favoriten entfernen"
+  },
+  "tags": {
+    "joke": "Witz",
+    "recipe": "Rezept",
+    "startup": "Startup",
+    "story": "Geschichte",
+    "poem": "Gedicht",
+    "art": "Kunst",
+    "app": "App",
+    "game": "Spiel",
+    "movie": "Film",
+    "book": "Buch",
+    "song": "Lied",
+    "exercise": "Übung",
+    "news": "Nachrichten",
+    "idea": "Idee"
+  }
+}

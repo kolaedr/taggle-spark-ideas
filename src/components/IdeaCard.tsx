@@ -1,9 +1,9 @@
-
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Bookmark, Share } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { useToast } from '@/hooks/use-toast';
+import { useTranslation } from 'react-i18next';
 
 type IdeaCardProps = {
   idea: string;
@@ -12,29 +12,30 @@ type IdeaCardProps = {
   onSave?: () => void;
 };
 
-const IdeaCard = ({ 
-  idea, 
-  tag, 
+const IdeaCard = ({
+  idea,
+  tag,
   isLoading = false,
   onSave
 }: IdeaCardProps) => {
   const [saved, setSaved] = useState(false);
   const [showCard, setShowCard] = useState(false);
   const { toast } = useToast();
+  const { t } = useTranslation();
 
   useEffect(() => {
     // Add entrance animation
     const timer = setTimeout(() => {
       setShowCard(true);
     }, 100);
-    
+
     return () => clearTimeout(timer);
   }, []);
 
   const handleSave = () => {
     setSaved(!saved);
     if (onSave) onSave();
-    
+
     toast({
       title: saved ? "Idea removed from favorites" : "Idea saved to favorites",
       description: saved ? "The idea has been removed from your collection." : "You can find this in your saved ideas.",
@@ -74,7 +75,7 @@ const IdeaCard = ({
   }
 
   return (
-    <div 
+    <div
       className={cn(
         "idea-card w-full max-w-2xl mx-auto",
         "transform transition-all duration-500 ease-out",
@@ -86,20 +87,20 @@ const IdeaCard = ({
       </span>
       <p className="text-base sm:text-lg leading-relaxed">{idea}</p>
       <div className="flex justify-end mt-6 space-x-2">
-        <Button 
-          variant="outline" 
-          size="icon" 
-          className="rounded-full" 
+        <Button
+          variant="outline"
+          size="icon"
+          className="rounded-full"
           onClick={handleSave}
         >
-          <Bookmark 
-            className={cn("h-4 w-4", saved ? "fill-primary" : "")} 
+          <Bookmark
+            className={cn("h-4 w-4", saved ? "fill-primary" : "")}
           />
         </Button>
-        <Button 
-          variant="outline" 
-          size="icon" 
-          className="rounded-full" 
+        <Button
+          variant="outline"
+          size="icon"
+          className="rounded-full"
           onClick={handleShare}
         >
           <Share className="h-4 w-4" />

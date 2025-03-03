@@ -1,0 +1,67 @@
+{
+  "common": {
+    "home": "Головна",
+    "about": "Про нас",
+    "saved": "Збережені ідеї",
+    "profile": "Профіль",
+    "login": "Увійти",
+    "logout": "Вийти",
+    "email": "Електронна пошта",
+    "language": "Мова",
+    "preferences": "Налаштування",
+    "preferredLanguage": "Бажана мова",
+    "selectLanguage": "Виберіть мову",
+    "appName": "GiveMeWhat",
+    "allRightsReserved": "Всі права захищено"
+  },
+  "home": {
+    "title": "Що ти створиш сьогодні?",
+    "subtitle": "Виберіть тег і дозвольте ШІ згенерувати креативні ідеї для вас. Клікайте на різні теги, щоб дослідити нескінченні можливості.",
+    "selectTag": "Виберіть тег, щоб почати",
+    "clickTagDescription": "Клікніть на будь-який тег, щоб згенерувати креативну ідею",
+    "yourIdea": "Ваша ідея для {{tag}}",
+    "refresh": "Оновити",
+    "refreshDescription": "Клікніть оновити для нової ідеї або спробуйте інший тег"
+  },
+  "profile": {
+    "title": "Профіль",
+    "accountInfo": "Інформація про обліковий запис"
+  },
+  "auth": {
+    "welcomeBack": "З поверненням!",
+    "createAccount": "Створити обліковий запис",
+    "loginDescription": "Введіть ваші облікові дані для доступу до облікового запису",
+    "signupDescription": "Заповніть деталі нижче, щоб створити обліковий запис",
+    "forgotPassword": "Забули пароль?",
+    "processing": "Обробка...",
+    "passwordRequirements": "Пароль повинен містити щонайменше 8 символів"
+  },
+  "ideas": {
+    "savedToFavorites": "Ідею збережено в улюблених",
+    "removedFromFavorites": "Ідею видалено з улюблених",
+    "findInSaved": "Ви можете знайти це у збережених ідеях",
+    "removedFromCollection": "Ідею видалено з вашої колекції",
+    "shareTitle": "Перевірте цю ідею від GiveMeWhat",
+    "copiedToClipboard": "Скопійовано в буфер обміну",
+    "clipboardDescription": "Ідею скопійовано в буфер обміну",
+    "share": "Поділитися",
+    "saveToFavorites": "Зберегти в улюблених",
+    "removeFromFavorites": "Видалити з улюблених"
+  },
+  "tags": {
+    "joke": "Жарт",
+    "recipe": "Рецепт",
+    "startup": "Стартап",
+    "story": "Історія",
+    "poem": "Вірш",
+    "art": "Мистецтво",
+    "app": "Додаток",
+    "game": "Гра",
+    "movie": "Фільм",
+    "book": "Книга",
+    "song": "Пісня",
+    "exercise": "Вправа",
+    "news": "Новини",
+    "idea": "Ідея"
+  }
+}

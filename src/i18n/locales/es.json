@@ -1,0 +1,67 @@
+{
+  "common": {
+    "home": "Inicio",
+    "about": "Sobre nosotros",
+    "saved": "Ideas guardadas",
+    "profile": "Perfil",
+    "login": "Iniciar sesión",
+    "logout": "Cerrar sesión",
+    "email": "Correo electrónico",
+    "language": "Idioma",
+    "preferences": "Preferencias",
+    "preferredLanguage": "Idioma preferido",
+    "selectLanguage": "Seleccionar idioma",
+    "appName": "GiveMeWhat",
+    "allRightsReserved": "Todos los derechos reservados"
+  },
+  "home": {
+    "title": "¿Qué crearás hoy?",
+    "subtitle": "Selecciona una etiqueta y deja que la IA genere ideas creativas para ti. Haz clic en diferentes etiquetas para explorar infinitas posibilidades.",
+    "selectTag": "Selecciona una etiqueta para comenzar",
+    "clickTagDescription": "Haz clic en cualquier etiqueta para generar una idea creativa",
+    "yourIdea": "Tu idea de {{tag}}",
+    "refresh": "Actualizar",
+    "refreshDescription": "Haz clic en actualizar para una nueva idea o prueba otra etiqueta"
+  },
+  "profile": {
+    "title": "Perfil",
+    "accountInfo": "Información de la cuenta"
+  },
+  "auth": {
+    "welcomeBack": "¡Bienvenido de nuevo!",
+    "createAccount": "Crear una cuenta",
+    "loginDescription": "Ingresa tus credenciales para acceder a tu cuenta",
+    "signupDescription": "Completa los detalles a continuación para crear tu cuenta",
+    "forgotPassword": "¿Olvidaste tu contraseña?",
+    "processing": "Procesando...",
+    "passwordRequirements": "La contraseña debe tener al menos 8 caracteres"
+  },
+  "ideas": {
+    "savedToFavorites": "Idea guardada en favoritos",
+    "removedFromFavorites": "Idea eliminada de favoritos",
+    "findInSaved": "Puedes encontrar esto en tus ideas guardadas",
+    "removedFromCollection": "La idea ha sido eliminada de tu colección",
+    "shareTitle": "¡Mira esta idea de GiveMeWhat!",
+    "copiedToClipboard": "Copiado al portapapeles",
+    "clipboardDescription": "La idea ha sido copiada a tu portapapeles",
+    "share": "Compartir",
+    "saveToFavorites": "Guardar en favoritos",
+    "removeFromFavorites": "Eliminar de favoritos"
+  },
+  "tags": {
+    "joke": "Chiste",
+    "recipe": "Receta",
+    "startup": "Startup",
+    "story": "Historia",
+    "poem": "Poema",
+    "art": "Arte",
+    "app": "Aplicación",
+    "game": "Juego",
+    "movie": "Película",
+    "book": "Libro",
+    "song": "Canción",
+    "exercise": "Ejercicio",
+    "news": "Noticias",
+    "idea": "Idea"
+  }
+}
