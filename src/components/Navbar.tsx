@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import { UserCircle, Menu, X, LogOut, LogIn } from 'lucide-react';
+import { UserCircle, Menu, X, LogOut, LogIn, Lightbulb } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { useIsMobile } from '../hooks/useIsMobile';
 import LanguageSelector from './LanguageSelector';
@@ -32,7 +32,10 @@ const Navbar = ({ user, onLogin, onLogout }: NavbarProps) => {
           to="/"
           className="text-xl font-semibold tracking-tight flex items-center"
         >
-          Give<span className="text-primary font-bold uppercase text-amber-500">me</span>whaT
+          <div className="grid place-content-center size-8 bg-yellow-500 mr-2 rounded">
+            <Lightbulb className=" size-6 text-white" />
+          </div>
+          <p className="border-b-2 border-yellow-500">Give Me Something</p>
         </Link>
 
         {/* Desktop Navigation */}
