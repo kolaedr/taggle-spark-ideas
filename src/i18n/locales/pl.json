@@ -1,0 +1,67 @@
+{
+  "common": {
+    "home": "Strona główna",
+    "about": "O nas",
+    "saved": "Zapisane pomysły",
+    "profile": "Profil",
+    "login": "Zaloguj się",
+    "logout": "Wyloguj się",
+    "email": "E-mail",
+    "language": "Język",
+    "preferences": "Preferencje",
+    "preferredLanguage": "Preferowany język",
+    "selectLanguage": "Wybierz język",
+    "appName": "GiveMeWhat",
+    "allRightsReserved": "Wszelkie prawa zastrzeżone"
+  },
+  "home": {
+    "title": "Co stworzysz dziś?",
+    "subtitle": "Wybierz tag i pozwól AI wygenerować kreatywne pomysły dla Ciebie. Kliknij na różne tagi, aby odkryć nieskończone możliwości.",
+    "selectTag": "Wybierz tag, aby rozpocząć",
+    "clickTagDescription": "Kliknij na dowolny tag, aby wygenerować kreatywny pomysł",
+    "yourIdea": "Twój pomysł na {{tag}}",
+    "refresh": "Odśwież",
+    "refreshDescription": "Kliknij odśwież, aby uzyskać nowy pomysł lub spróbuj innego tagu"
+  },
+  "profile": {
+    "title": "Profil",
+    "accountInfo": "Informacje o koncie"
+  },
+  "auth": {
+    "welcomeBack": "Witaj z powrotem!",
+    "createAccount": "Utwórz konto",
+    "loginDescription": "Wprowadź swoje dane logowania, aby uzyskać dostęp do konta",
+    "signupDescription": "Wypełnij szczegóły poniżej, aby utworzyć konto",
+    "forgotPassword": "Zapomniałeś hasła?",
+    "processing": "Przetwarzanie...",
+    "passwordRequirements": "Hasło musi zawierać co najmniej 8 znaków"
+  },
+  "ideas": {
+    "savedToFavorites": "Pomysł zapisany w ulubionych",
+    "removedFromFavorites": "Pomysł usunięty z ulubionych",
+    "findInSaved": "Możesz to znaleźć w zapisanych pomysłach",
+    "removedFromCollection": "Pomysł został usunięty z Twojej kolekcji",
+    "shareTitle": "Sprawdź ten pomysł z GiveMeWhat",
+    "copiedToClipboard": "Skopiowano do schowka",
+    "clipboardDescription": "Pomysł został skopiowany do schowka",
+    "share": "Udostępnij",
+    "saveToFavorites": "Zapisz w ulubionych",
+    "removeFromFavorites": "Usuń z ulubionych"
+  },
+  "tags": {
+    "joke": "Żart",
+    "recipe": "Przepis",
+    "startup": "Startup",
+    "story": "Historia",
+    "poem": "Wiersz",
+    "art": "Sztuka",
+    "app": "Aplikacja",
+    "game": "Gra",
+    "movie": "Film",
+    "book": "Książka",
+    "song": "Piosenka",
+    "exercise": "Ćwiczenie",
+    "news": "Aktualności",
+    "idea": "Pomysł"
+  }
+}

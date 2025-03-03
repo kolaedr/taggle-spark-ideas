@@ -1,0 +1,67 @@
+{
+  "common": {
+    "home": "Home",
+    "about": "Chi siamo",
+    "saved": "Idee salvate",
+    "profile": "Profilo",
+    "login": "Accedi",
+    "logout": "Esci",
+    "email": "Email",
+    "language": "Lingua",
+    "preferences": "Preferenze",
+    "preferredLanguage": "Lingua preferita",
+    "selectLanguage": "Seleziona lingua",
+    "appName": "GiveMeWhat",
+    "allRightsReserved": "Tutti i diritti riservati"
+  },
+  "home": {
+    "title": "Cosa creerai oggi?",
+    "subtitle": "Seleziona un tag e lascia che l'IA generi idee creative per te. Clicca su diversi tag per esplorare infinite possibilità.",
+    "selectTag": "Seleziona un tag per iniziare",
+    "clickTagDescription": "Clicca su qualsiasi tag per generare un'idea creativa",
+    "yourIdea": "La tua idea di {{tag}}",
+    "refresh": "Aggiorna",
+    "refreshDescription": "Clicca su aggiorna per una nuova idea o prova un altro tag"
+  },
+  "profile": {
+    "title": "Profilo",
+    "accountInfo": "Informazioni account"
+  },
+  "auth": {
+    "welcomeBack": "Bentornato!",
+    "createAccount": "Crea un account",
+    "loginDescription": "Inserisci le tue credenziali per accedere al tuo account",
+    "signupDescription": "Compila i dettagli qui sotto per creare il tuo account",
+    "forgotPassword": "Password dimenticata?",
+    "processing": "Elaborazione...",
+    "passwordRequirements": "La password deve contenere almeno 8 caratteri"
+  },
+  "ideas": {
+    "savedToFavorites": "Idea salvata nei preferiti",
+    "removedFromFavorites": "Idea rimossa dai preferiti",
+    "findInSaved": "Puoi trovarla nelle tue idee salvate",
+    "removedFromCollection": "L'idea è stata rimossa dalla tua collezione",
+    "shareTitle": "Guarda questa idea da GiveMeWhat",
+    "copiedToClipboard": "Copiato negli appunti",
+    "clipboardDescription": "L'idea è stata copiata negli appunti",
+    "share": "Condividi",
+    "saveToFavorites": "Salva nei preferiti",
+    "removeFromFavorites": "Rimuovi dai preferiti"
+  },
+  "tags": {
+    "joke": "Battuta",
+    "recipe": "Ricetta",
+    "startup": "Startup",
+    "story": "Storia",
+    "poem": "Poesia",
+    "art": "Arte",
+    "app": "App",
+    "game": "Gioco",
+    "movie": "Film",
+    "book": "Libro",
+    "song": "Canzone",
+    "exercise": "Esercizio",
+    "news": "Notizie",
+    "idea": "Idea"
+  }
+}

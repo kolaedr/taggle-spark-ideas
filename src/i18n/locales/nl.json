@@ -1,0 +1,67 @@
+{
+  "common": {
+    "home": "Home",
+    "about": "Over ons",
+    "saved": "Opgeslagen ideeën",
+    "profile": "Profiel",
+    "login": "Inloggen",
+    "logout": "Uitloggen",
+    "email": "E-mail",
+    "language": "Taal",
+    "preferences": "Voorkeuren",
+    "preferredLanguage": "Voorkeurstaal",
+    "selectLanguage": "Selecteer taal",
+    "appName": "GiveMeWhat",
+    "allRightsReserved": "Alle rechten voorbehouden"
+  },
+  "home": {
+    "title": "Wat ga je vandaag maken?",
+    "subtitle": "Selecteer een tag en laat AI creatieve ideeën voor je genereren. Klik op verschillende tags om eindeloze mogelijkheden te verkennen.",
+    "selectTag": "Selecteer een tag om te beginnen",
+    "clickTagDescription": "Klik op een tag om een creatief idee te genereren",
+    "yourIdea": "Je {{tag}} idee",
+    "refresh": "Vernieuwen",
+    "refreshDescription": "Klik op vernieuwen voor een nieuw idee of probeer een andere tag"
+  },
+  "profile": {
+    "title": "Profiel",
+    "accountInfo": "Accountgegevens"
+  },
+  "auth": {
+    "welcomeBack": "Welkom terug!",
+    "createAccount": "Account aanmaken",
+    "loginDescription": "Voer je inloggegevens in om toegang te krijgen tot je account",
+    "signupDescription": "Vul de gegevens hieronder in om je account aan te maken",
+    "forgotPassword": "Wachtwoord vergeten?",
+    "processing": "Verwerken...",
+    "passwordRequirements": "Het wachtwoord moet minimaal 8 tekens lang zijn"
+  },
+  "ideas": {
+    "savedToFavorites": "Idee opgeslagen in favorieten",
+    "removedFromFavorites": "Idee verwijderd uit favorieten",
+    "findInSaved": "Je kunt dit vinden in je opgeslagen ideeën",
+    "removedFromCollection": "Het idee is verwijderd uit je collectie",
+    "shareTitle": "Bekijk dit idee van GiveMeWhat",
+    "copiedToClipboard": "Gekopieerd naar klembord",
+    "clipboardDescription": "Het idee is gekopieerd naar je klembord",
+    "share": "Delen",
+    "saveToFavorites": "Opslaan in favorieten",
+    "removeFromFavorites": "Verwijderen uit favorieten"
+  },
+  "tags": {
+    "joke": "Grap",
+    "recipe": "Recept",
+    "startup": "Startup",
+    "story": "Verhaal",
+    "poem": "Gedicht",
+    "art": "Kunst",
+    "app": "App",
+    "game": "Spel",
+    "movie": "Film",
+    "book": "Boek",
+    "song": "Lied",
+    "exercise": "Oefening",
+    "news": "Nieuws",
+    "idea": "Idee"
+  }
+}
