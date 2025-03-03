@@ -5,7 +5,7 @@ import { corsHeaders } from "../_shared/cors.ts";
 const openaiApiKey = Deno.env.get("OPENAI_API_KEY") || "";
 
 async function generateIdeaWithOpenAI(tag: string, language: string = 'en') {
-  const prompt = `Generate a creative and original ${tag} idea. Be specific, engaging, and concise (50-100 words). Generate the response in ${language} language.`;
+  const prompt = `Generate a creative and original ${tag} idea. Be specific, engaging, and concise (50-100 words). `;
   
   const response = await fetch("https://api.openai.com/v1/chat/completions", {
     method: "POST",
@@ -18,7 +18,7 @@ async function generateIdeaWithOpenAI(tag: string, language: string = 'en') {
       messages: [
         {
           role: "system",
-          content: "You are a creative assistant that generates original ideas. Always respond in the specified language."
+          content: "You are a creative assistant that generates original ideas. Always respond in the specified language: " + language
         },
         {
           role: "user",
