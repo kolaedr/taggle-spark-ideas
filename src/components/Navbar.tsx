@@ -1,10 +1,13 @@
-
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { UserCircle, Menu, X, LogOut, LogIn } from 'lucide-react';
 import { cn } from '@/lib/utils';
-import { useIsMobile } from '@/hooks/use-mobile';
+import { useIsMobile } from '../hooks/useIsMobile';
+import LanguageSelector from './LanguageSelector';
+import { useLanguage } from '@/contexts/LanguageContext';
+import { useAuth } from '../hooks/useAuth';
+import { useTranslation } from 'react-i18next';
 
 type NavbarProps = {
   user?: any;
@@ -15,6 +18,8 @@ type NavbarProps = {
 const Navbar = ({ user, onLogin, onLogout }: NavbarProps) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const isMobile = useIsMobile();
+  const { language, setLanguage } = useLanguage();
+  const { t } = useTranslation();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -23,8 +28,8 @@ const Navbar = ({ user, onLogin, onLogout }: NavbarProps) => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/50 backdrop-blur-md border-b border-border">
       <div className="container mx-auto px-4 py-3 flex items-center justify-between">
-        <Link 
-          to="/" 
+        <Link
+          to="/"
           className="text-xl font-semibold tracking-tight flex items-center"
         >
           Give<span className="text-primary font-bold uppercase text-amber-500">me</span>whaT
@@ -34,40 +39,44 @@ const Navbar = ({ user, onLogin, onLogout }: NavbarProps) => {
         {!isMobile && (
           <nav className="flex items-center space-x-6">
             <Link to="/" className="text-sm font-medium hover:text-primary transition-colors">
-              Home
+              {t('common.home')}
             </Link>
             <Link to="/about" className="text-sm font-medium hover:text-primary transition-colors">
-              About
+              {t('common.about')}
             </Link>
             <Link to="/saved" className="text-sm font-medium hover:text-primary transition-colors">
-              Saved Ideas
+              {t('common.saved')}
             </Link>
-            
+            <LanguageSelector
+              currentLanguage={language}
+              onLanguageChange={setLanguage}
+            />
             {user ? (
-              <div className="flex items-center space-x-3">
-                <Button 
-                  variant="ghost" 
-                  className="text-sm font-medium flex items-center space-x-2"
+              <div className="flex items-center space-x-4">
+                <Link
+                  to="/profile"
+                  className="text-sm font-medium hover:text-primary transition-colors flex items-center"
+                >
+                  <UserCircle className="h-4 w-4 mr-1" />
+                  {t('common.profile')}
+                </Link>
+                <Button
+                  variant="ghost"
+                  size="sm"
                   onClick={onLogout}
                 >
-                  <LogOut className="h-4 w-4" />
-                  <span>Logout</span>
+                  <LogOut className="h-4 w-4 mr-1" />
+                  {t('common.logout')}
                 </Button>
-                <Link to="/profile">
-                  <div className="h-8 w-8 rounded-full bg-primary/10 flex items-center justify-center">
-                    <UserCircle className="h-5 w-5" />
-                  </div>
-                </Link>
               </div>
             ) : (
-              <Button 
-                variant="default" 
-                size="sm" 
-                className="flex items-center space-x-2"
+              <Button
+                variant="default"
+                size="sm"
                 onClick={onLogin}
               >
-                <LogIn className="h-4 w-4" />
-                <span>Sign In</span>
+                <LogIn className="h-4 w-4 mr-1" />
+                {t('common.login')}
               </Button>
             )}
           </nav>
@@ -75,10 +84,10 @@ const Navbar = ({ user, onLogin, onLogout }: NavbarProps) => {
 
         {/* Mobile Menu Button */}
         {isMobile && (
-          <Button 
-            variant="ghost" 
-            size="icon" 
-            className="md:hidden" 
+          <Button
+            variant="ghost"
+            size="icon"
+            className="md:hidden"
             onClick={toggleMenu}
           >
             {isMenuOpen ? (
@@ -92,7 +101,7 @@ const Navbar = ({ user, onLogin, onLogout }: NavbarProps) => {
 
       {/* Mobile Menu */}
       {isMobile && (
-        <div 
+        <div
           className={cn(
             "fixed inset-x-0 bg-background/80 backdrop-blur-lg border-b border-border",
             "transition-all duration-300 ease-in-out",
@@ -100,40 +109,46 @@ const Navbar = ({ user, onLogin, onLogout }: NavbarProps) => {
           )}
         >
           <nav className="container mx-auto px-4 py-4 flex flex-col space-y-4">
-            <Link 
-              to="/" 
+            <Link
+              to="/"
               className="px-4 py-2 hover:bg-secondary rounded-md transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
-              Home
+              {t('common.home')}
             </Link>
-            <Link 
-              to="/about" 
+            <Link
+              to="/about"
               className="px-4 py-2 hover:bg-secondary rounded-md transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
-              About
+              {t('common.about')}
             </Link>
-            <Link 
-              to="/saved" 
+            <Link
+              to="/saved"
               className="px-4 py-2 hover:bg-secondary rounded-md transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
-              Saved Ideas
+              {t('common.saved')}
             </Link>
-            
+            <div className="px-4 py-2">
+              <LanguageSelector
+                currentLanguage={language}
+                onLanguageChange={setLanguage}
+              />
+            </div>
+
             {user ? (
               <div className="border-t border-border pt-4 flex flex-col space-y-4">
-                <Link 
-                  to="/profile" 
+                <Link
+                  to="/profile"
                   className="px-4 py-2 hover:bg-secondary rounded-md transition-colors flex items-center"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   <UserCircle className="h-4 w-4 mr-2" />
-                  <span>Profile</span>
+                  <span>{t('common.profile')}</span>
                 </Link>
-                <Button 
-                  variant="ghost" 
+                <Button
+                  variant="ghost"
                   className="justify-start"
                   onClick={() => {
                     if (onLogout) onLogout();
@@ -141,12 +156,12 @@ const Navbar = ({ user, onLogin, onLogout }: NavbarProps) => {
                   }}
                 >
                   <LogOut className="h-4 w-4 mr-2" />
-                  <span>Logout</span>
+                  <span>{t('common.logout')}</span>
                 </Button>
               </div>
             ) : (
-              <Button 
-                variant="default" 
+              <Button
+                variant="default"
                 className="mt-2"
                 onClick={() => {
                   if (onLogin) onLogin();
@@ -154,7 +169,7 @@ const Navbar = ({ user, onLogin, onLogout }: NavbarProps) => {
                 }}
               >
                 <LogIn className="h-4 w-4 mr-2" />
-                <span>Sign In</span>
+                <span>{t('common.login')}</span>
               </Button>
             )}
           </nav>
