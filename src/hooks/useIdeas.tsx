@@ -3,6 +3,7 @@ import supabase from '@/lib/supabase';
 import { useAuth } from '@/hooks/useAuth';
 import { generateIdea } from '@/lib/openai';
 import { useToast } from '@/hooks/use-toast';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 export type Idea = {
   id?: string;
@@ -10,6 +11,7 @@ export type Idea = {
   tag: string;
   created_at?: string;
   user_id?: string;
+  language?: string;
 };
 
 export const useIdeas = () => {
@@ -19,6 +21,7 @@ export const useIdeas = () => {
   const [currentIdea, setCurrentIdea] = useState<Idea | null>(null);
   const { user } = useAuth();
   const { toast } = useToast();
+  const { language } = useLanguage();
 
   // Fetch saved ideas when user changes
   useEffect(() => {
@@ -32,14 +35,14 @@ export const useIdeas = () => {
   // Fetch saved ideas from Supabase
   const fetchSavedIdeas = async () => {
     if (!user) return;
-    
+
     try {
       const { data, error } = await supabase
         .from('ideas')
         .select('*')
         .eq('user_id', user.id)
         .order('created_at', { ascending: false });
-        
+
       if (error) throw error;
       setSavedIdeas(data || []);
     } catch (error) {
@@ -56,10 +59,19 @@ export const useIdeas = () => {
   const generateNewIdea = async (tag: string) => {
     setIsLoading(true);
     try {
-      const content = await generateIdea(tag);
-      const newIdea: Idea = { content, tag };
+      const { content, idea } = await generateIdea(tag, language, user?.id);
+      const newIdea: Idea = {
+        ...idea,
+        content,
+        tag,
+        language
+      };
       setCurrentIdea(newIdea);
       setIdeas([newIdea, ...ideas]);
+
+      if (user) {
+        setSavedIdeas([newIdea, ...savedIdeas]);
+      }
     } catch (error) {
       console.error('Error generating idea:', error);
       toast({
@@ -82,15 +94,15 @@ export const useIdeas = () => {
       });
       return;
     }
-    
+
     try {
       const { data, error } = await supabase
         .from('ideas')
         .insert([{ ...idea, user_id: user.id }])
         .select();
-        
+
       if (error) throw error;
-      
+
       if (data && data[0]) {
         setSavedIdeas([data[0], ...savedIdeas]);
         toast({
@@ -115,9 +127,9 @@ export const useIdeas = () => {
         .from('ideas')
         .delete()
         .eq('id', ideaId);
-        
+
       if (error) throw error;
-      
+
       setSavedIdeas(savedIdeas.filter(idea => idea.id !== ideaId));
       toast({
         title: "Idea deleted",
