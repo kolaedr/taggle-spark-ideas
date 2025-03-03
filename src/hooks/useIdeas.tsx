@@ -1,12 +1,8 @@
-
 import { useState, useEffect } from 'react';
 import supabase from '@/lib/supabase';
 import { useAuth } from '@/hooks/useAuth';
 import { generateIdea } from '@/lib/openai';
 import { useToast } from '@/hooks/use-toast';
-
-// Temporary API key storage - will be replaced with secure storage after Supabase integration
-const OPENAI_API_KEY = import.meta.env.VITE_OPENAI_API_KEY || '';
 
 export type Idea = {
   id?: string;
@@ -60,7 +56,7 @@ export const useIdeas = () => {
   const generateNewIdea = async (tag: string) => {
     setIsLoading(true);
     try {
-      const content = await generateIdea(tag, OPENAI_API_KEY);
+      const content = await generateIdea(tag);
       const newIdea: Idea = { content, tag };
       setCurrentIdea(newIdea);
       setIdeas([newIdea, ...ideas]);
