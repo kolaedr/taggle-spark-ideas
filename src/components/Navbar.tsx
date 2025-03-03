@@ -49,7 +49,11 @@ const Navbar = ({ user, onLogin, onLogout }: NavbarProps) => {
             </Link>
             <LanguageSelector
               currentLanguage={language}
-              onLanguageChange={setLanguage}
+              onLanguageChange={(lang) => {
+                // Language change will be handled by the context
+                setLanguage(lang);
+                window.location.reload();
+              }}
             />
             {user ? (
               <div className="flex items-center space-x-4">
@@ -103,9 +107,9 @@ const Navbar = ({ user, onLogin, onLogout }: NavbarProps) => {
       {isMobile && (
         <div
           className={cn(
-            "fixed inset-x-0 bg-background/80 backdrop-blur-lg border-b border-border",
+            "fixed inset-x-0 top-[57px] z-50 bg-background/95 backdrop-blur-lg border-b border-border",
             "transition-all duration-300 ease-in-out",
-            isMenuOpen ? "top-[57px] opacity-100" : "top-[-100%] opacity-0"
+            isMenuOpen ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0 pointer-events-none"
           )}
         >
           <nav className="container mx-auto px-4 py-4 flex flex-col space-y-4">
@@ -133,7 +137,11 @@ const Navbar = ({ user, onLogin, onLogout }: NavbarProps) => {
             <div className="px-4 py-2">
               <LanguageSelector
                 currentLanguage={language}
-                onLanguageChange={setLanguage}
+                onLanguageChange={(lang) => {
+                  setLanguage(lang);
+                  // Language change will be handled by the context
+                  window.location.reload();
+                }}
               />
             </div>
 
