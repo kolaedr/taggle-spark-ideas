@@ -23,6 +23,7 @@ const TAGS = [
   { text: 'Book', color: 'pink' as const },
   { text: 'Song', color: 'blue' as const },
   { text: 'Exercise', color: 'green' as const },
+  { text: 'News', color: 'purple' as const },
 ];
 
 const Index = () => {
