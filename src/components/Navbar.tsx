@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import { SignIn, UserCircle, Menu, X, LogOut } from 'lucide-react';
+import { UserCircle, Menu, X, LogOut, LogIn } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { useIsMobile } from '@/hooks/use-mobile';
 
@@ -66,7 +66,7 @@ const Navbar = ({ user, onLogin, onLogout }: NavbarProps) => {
                 className="flex items-center space-x-2"
                 onClick={onLogin}
               >
-                <SignIn className="h-4 w-4" />
+                <LogIn className="h-4 w-4" />
                 <span>Sign In</span>
               </Button>
             )}
@@ -153,7 +153,7 @@ const Navbar = ({ user, onLogin, onLogout }: NavbarProps) => {
                   setIsMenuOpen(false);
                 }}
               >
-                <SignIn className="h-4 w-4 mr-2" />
+                <LogIn className="h-4 w-4 mr-2" />
                 <span>Sign In</span>
               </Button>
             )}
